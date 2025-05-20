@@ -37,12 +37,10 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
         <a href="#home" className="text-2xl font-bold text-red-500">
           Mahesh
         </a>
 
-        {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8">
           {navItems.map((item, index) => (
             <motion.a
@@ -57,7 +55,6 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Mobile Menu Icon */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
             {isOpen ? <IoClose size={28} /> : <BiMenuAltRight size={28} />}
@@ -65,7 +62,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Dropdown */}
       <AnimatePresence>
         {isOpen && (
           <motion.div

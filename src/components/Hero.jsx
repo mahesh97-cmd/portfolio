@@ -42,7 +42,6 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-4">
-      {/* Background Image */}
       <motion.div
         initial={{ scale: 1.05, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
@@ -57,7 +56,6 @@ export default function Hero() {
         }}
       />
 
-      {/* Foreground Content */}
       <motion.div
         className="relative z-10 text-center max-w-2xl"
         variants={containerVariants}

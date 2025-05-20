@@ -8,8 +8,8 @@ const projects = [
     title: "LoveMate",
     description:
       "A modern dating app with real-time chat, interest requests, profile editing, and swipe-based discovery. Built using MERN + Cloudinary + Tailwind.",
-    link: "https://lovemate.vercel.app",
-    github: "https://github.com/yourusername/lovemate",
+    link: "#",
+    github: "",
     tags: ["MERN", "Tailwind","Cloudinary", "Nodemailer"],
   },
   {
@@ -17,31 +17,31 @@ const projects = [
     description:
       "AI-powered recipe improviser using Gemini API. Enter ingredients, get delicious recipes with instructions. Fully responsive design.",
     link: "#",
-    github: "https://github.com/yourusername/jugaad-chef",
+    github: "",
     tags: ["MERN", "Gemini API", "AI"],
   },
   {
   title: "SubhAvasar Backend",
   description:
     "Robust backend for an event management platform. Built with Node.js and Express, it supports vendor onboarding, user bookings, image uploads via Cloudinary, email notifications using Nodemailer.",
-  link: "#", // You can replace this with API docs or Postman collection link if available
-  github: "https://github.com/yourusername/subhavasar-backend", // Replace with your actual GitHub repo
+  link: "#", 
+  github: "", 
   tags: ["Node.js", "Express", "Cloudinary", "Nodemailer", "REST API"],
 },
 {
   title: "AI Email Generator",
   description:
     "A full-stack AI-powered email generator that crafts professional emails based on structured input like sender role, email type, and tone. The backend uses Node.js and Gemini AI to generate emails, while the frontend offers a clean, user-friendly interface with real-time results.",
-  link: "https://yourfrontendurl.com", // Replace with live link if hosted
-  github: "https://github.com/yourusername/ai-email-generator", // Replace with your repo
+  link: "", 
+  github: "", 
   tags: ["Node.js", "Gemini AI","TailwindCSS",],
 },
 {
   title: "UrbanSpice - Food Delivery App",
   description:
     "A sleek food delivery platform that fetches real-time restaurant and menu data using Swiggy's API. Built with a responsive frontend and seamless user experience, it mimics core functionalities of modern food delivery services.",
-  link: "https://yourfrontendurl.com", // Replace with your live demo link if hosted
-  github: "https://github.com/yourusername/urbanspice", // Replace with your actual repo link
+  link: "", 
+  github: "", 
   tags: ["React", "TailwindCSS", "Swiggy API", "Food Delivery", "Frontend"],
 }
 
@@ -108,7 +108,6 @@ export default function Projects() {
                 </a>
               </div>
 
-              {/* Hover glow effect */}
               <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-20 transition duration-300 bg-violet-400 blur-xl"></div>
             </motion.div>
           ))}
