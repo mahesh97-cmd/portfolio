@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa6";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 
 import bg from "../assets/bg7.png";
-import profile from "../assets/final.png"; 
+import profile from "../assets/final.png";
 
 export default function Hero() {
   const words = ["Frontend", "Backend", "MERN Stack"];
@@ -39,12 +39,15 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden ">
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center justify-center  "
+    >
       <motion.div
         initial={{ scale: 1.05, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
-        className="block md:hidden absolute inset-0 bg-cover bg-center blur-sm brightness-[0.4] z-0"
+        className="block md:hidden absolute inset-0 bg-cover bg-center blur-sm brightness-[0.4] z-0 "
         style={{
           backgroundImage: `url(${bg.src || bg})`,
           WebkitMaskImage: "linear-gradient(to bottom, black 70%, transparent)",
@@ -62,14 +65,14 @@ export default function Hero() {
           animate="visible"
         >
           <motion.h2
-            className="text-xl md:text-2xl text-violet-400 mb-4 font-light"
+            className="text-4xl md:text-6xl text-violet-400 mb-4 font-bold"
             variants={itemVariants}
           >
-            Hello, I am <span className="font-serif">S Mahesh Rao</span>
+            S Mahesh Rao
           </motion.h2>
 
           <motion.h1
-            className="text-3xl md:text-6xl font-bold mb-6 text-white"
+            className="text-xl md:text-4xl font-bold mb-6 text-white"
             variants={itemVariants}
           >
             <AnimatePresence mode="wait">
@@ -87,7 +90,7 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p
-            className="text-gray-300 md:text-lg max-w-xl mx-auto md:mx-0 mb-8 leading-relaxed"
+            className="text-gray-300 bg-gray-900/10 backdrop-blur-md md:bg-transparent rounded-lg md:text-lg max-w-xl mx-auto md:mx-0 mb-8 leading-relaxed  "
             variants={itemVariants}
           >
             I build modern, full-stack web applications using MongoDB, Express,
@@ -99,20 +102,23 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-6"
             variants={itemVariants}
           >
-            <motion.button
+            <motion.a
+              href="#contact"
               className="px-6 py-3 bg-violet-600 text-white rounded-full hover:bg-violet-700 transition-all shadow-md hover:shadow-violet-400/40"
               whileHover={{ scale: 1.07 }}
               whileTap={{ scale: 0.95 }}
             >
-              View Projects
-            </motion.button>
-            <motion.button
+              Get In Touch
+            </motion.a>
+            <motion.a
+            href="/cv.pdf"
+            download
               className="px-6 py-3 border border-violet-700 text-white rounded-full transition hover:bg-violet-700/20 hover:shadow-violet-300/30"
               whileHover={{ scale: 1.07 }}
               whileTap={{ scale: 0.95 }}
             >
-              Contact Me
-            </motion.button>
+              Download Resume
+            </motion.a>
           </motion.div>
 
           <motion.div
@@ -120,7 +126,7 @@ export default function Hero() {
             variants={itemVariants}
           >
             <motion.a
-              href="https://www.linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/s-mahesh-rao-49b052273/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2 }}
@@ -130,7 +136,7 @@ export default function Hero() {
               <IoLogoLinkedin className="text-3xl text-blue-400" />
             </motion.a>
             <motion.a
-              href="https://github.com/yourusername"
+              href="https://github.com/mahesh97-cmd"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2 }}
@@ -153,15 +159,15 @@ export default function Hero() {
             alt="Mahesh Profile"
             className="w-56 md:w-[600px] max-w-full pointer-events-none"
             style={{
-    WebkitMaskImage:
-          'linear-gradient(to bottom, transparent 0%, black 20%, black 40%, transparent 100%)',
-        maskImage:
-          'linear-gradient(to bottom, transparent 0%, black 20%, black 40%, transparent 100%)',
-        WebkitMaskRepeat: 'no-repeat',
-        maskRepeat: 'no-repeat',
-        WebkitMaskSize: '100% 100%',
-        maskSize: '100% 100%',
-  }}
+              WebkitMaskImage:
+                "linear-gradient(to bottom, transparent 0%, black 20%, black 40%, transparent 100%)",
+              maskImage:
+                "linear-gradient(to bottom, transparent 0%, black 20%, black 40%, transparent 100%)",
+              WebkitMaskRepeat: "no-repeat",
+              maskRepeat: "no-repeat",
+              WebkitMaskSize: "100% 100%",
+              maskSize: "100% 100%",
+            }}
           />
         </motion.div>
       </div>

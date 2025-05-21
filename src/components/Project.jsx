@@ -9,7 +9,7 @@ const projects = [
     description:
       "A modern dating app with real-time chat, interest requests, profile editing, and swipe-based discovery. Built using MERN + Cloudinary + Tailwind.",
     link: "#",
-    github: "",
+    github: "https://github.com/mahesh97-cmd/LoveMate",
     tags: ["MERN", "Tailwind","Cloudinary", "Nodemailer"],
   },
   {
@@ -17,7 +17,7 @@ const projects = [
     description:
       "AI-powered recipe improviser using Gemini API. Enter ingredients, get delicious recipes with instructions. Fully responsive design.",
     link: "#",
-    github: "",
+    github: "https://github.com/mahesh97-cmd/Jugaad-chef",
     tags: ["MERN", "Gemini API", "AI"],
   },
   {
@@ -25,23 +25,23 @@ const projects = [
   description:
     "Robust backend for an event management platform. Built with Node.js and Express, it supports vendor onboarding, user bookings, image uploads via Cloudinary, email notifications using Nodemailer.",
   link: "#", 
-  github: "", 
+  github: "https://github.com/mahesh97-cmd/event-taken-backend", 
   tags: ["Node.js", "Express", "Cloudinary", "Nodemailer", "REST API"],
 },
 {
   title: "AI Email Generator",
   description:
     "A full-stack AI-powered email generator that crafts professional emails based on structured input like sender role, email type, and tone. The backend uses Node.js and Gemini AI to generate emails, while the frontend offers a clean, user-friendly interface with real-time results.",
-  link: "", 
-  github: "", 
+  link: "#", 
+  github: "https://github.com/mahesh97-cmd/AI_Email_Genarator", 
   tags: ["Node.js", "Gemini AI","TailwindCSS",],
 },
 {
   title: "UrbanSpice - Food Delivery App",
   description:
     "A sleek food delivery platform that fetches real-time restaurant and menu data using Swiggy's API. Built with a responsive frontend and seamless user experience, it mimics core functionalities of modern food delivery services.",
-  link: "", 
-  github: "", 
+  link: "#", 
+  github: "https://github.com/mahesh97-cmd/Urban-Spice", 
   tags: ["React", "TailwindCSS", "Swiggy API", "Food Delivery", "Frontend"],
 }
 
@@ -65,7 +65,7 @@ const cardVariants = {
 
 export default function Projects() {
   return (
-    <section className="min-h-screen bg-gray-900 text-white py-20 px-6" id="projects">
+    <section className="min-h-screen bg-gray-900 text-white py-20 px-6" id="project">
       <motion.div
         className="max-w-6xl mx-auto text-center"
         initial="hidden"
@@ -108,7 +108,7 @@ export default function Projects() {
                 </a>
               </div>
 
-              <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-20 transition duration-300 bg-violet-400 blur-xl"></div>
+              <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-20 transition duration-300 bg-violet-400 blur-xl pointer-events-none"></div>
             </motion.div>
           ))}
         </div>
